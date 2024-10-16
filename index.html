@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400;700&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Bé tập tính</title>
+</head>
+<body>
+    <div class="pt-32 custom-grid wide block items-center w-max">
+        <h1 class="text-3xl font-bold font-mono">Bé tập tính</h1>
+        <br>
+        <div class="">
+            <!-- Số thứ nhất -->
+            <div class="row items-center space-x-2">
+                <h2 class="mr-4 text-base font-semibold font-sans col c-3">Số thứ nhất:</h2>
+                <input id="firstNumber" placeholder="Nhập số thứ nhất" class="col c-4 border-2 rounded px-2 py-1">
+                <div class="flex col c-2">
+                    <input type="radio" name="operation" value="add">
+                    <h2 class="ml-2 text-base font-semibold font-sans w-16">Cộng</h2>
+                </div>
+                <div class="flex col c-2">
+                    <input type="radio" name="operation" value="subtract">
+                    <h2 class="ml-2 text-base font-semibold font-sans w-16">Trừ</h2>
+                </div>  
+            </div>
+            <br>
+            <!-- Số thứ hai -->
+            <div class="row items-center space-x-2">
+                <h2 class="mr-4 text-base font-semibold font-sans col c-3">Số thứ hai:</h2>
+                <input id="secondNumber" placeholder="Nhập số thứ hai" class=" col c-4 border-2 rounded px-2 py-1">
+                <div class="flex col c-2">
+                    <input type="radio" name="operation" value="multiply">
+                    <h2 class="ml-2 text-base font-semibold font-sans w-16">Nhân</h2>
+                </div>
+                <div class="flex col c-2">
+                    <input type="radio" name="operation" value="divide">
+                    <h2 class="ml-2 text-base font-semibold font-sans w-16">Chia</h2>
+                </div>
+            </div>
+            <br>
+            <!-- Kết quả -->
+            <div class="row items-center space-x-2">
+                <h2 class="mr-4 text-base font-semibold font-sans col c-3">Kết quả:</h2>
+                <div class="h-9 border-2 rounded px-2 py-1 col c-4" id="result"></div>
+                <button class="col c-2 bg-gray-200 border-2 border-gray-300 rounded px-4 py-1 hover:bg-gray-300" onclick="calculate()">Tính</button>
+            </div>
+            <br>
+            <!-- Thông báo -->
+             <div class="row space-x-2">
+                <h2 class="mr-4 text-base font-semibold font-sans pr-4 col c-3">Thông báo:</h2>
+                <div class="text-red-500 py-1 text-wrap col c-8" id="notification"></div>
+             </div>
+        </div>
+    </div>
+    <script src="assets/script/script.js"></script>
+</body>
+</html>
