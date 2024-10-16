@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
     "build": "chmod +x ./node_modules/.bin/vite && vite build"
   },
   "dependencies": {
