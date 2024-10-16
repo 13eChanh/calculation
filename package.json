@@ -110,6 +110,7 @@
   },
   "scripts": {
     "dev": "vite"
+    "build": "chmod +x ./node_modules/.bin/vite && vite build"
   },
   "keywords": [],
   "author": "",
